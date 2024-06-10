@@ -1,0 +1,10 @@
+input.onButtonPressed(Button.A, function () {
+    basic.showNumber(0)
+    pins.digitalWritePin(DigitalPin.P13, 0)
+    basic.pause(1000)
+    pins.digitalWritePin(DigitalPin.P13, 1)
+    basic.showNumber(1)
+})
+radio.setGroup(1)
+basic.showNumber(1)
+pins.digitalWritePin(DigitalPin.P13, 1)
